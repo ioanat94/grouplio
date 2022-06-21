@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card:hover a {
+  border-bottom-color: white;
+}
+
+.card-anchor:hover {
+  border-bottom-color: #134e4a !important;
+}
