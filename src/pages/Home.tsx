@@ -16,7 +16,7 @@ function Home() {
   }, []);
 
   return (
-    <div className='flex items-center justify-center bg-[#F5F5F5] min-h-[calc(100vh-48px-72px)] py-10'>
+    <div className='flex items-center justify-center bg-[#F5F5F5] min-h-[calc(100vh-48px-80px)] py-10'>
       <div className='flex flex-wrap w-2/3 justify-evenly gap-x-8 gap-y-10'>
         {people.map((person) => (
           <Card key={person.id} {...person} />
