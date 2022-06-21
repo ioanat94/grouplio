@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
-import Card from '../components/Card';
+import Card from '../components/Card/Card';
 
 function Home() {
   const [people, setPeople] = useState([]);

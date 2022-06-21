@@ -8,7 +8,7 @@ function Navbar() {
         className='flex items-center justify-center gap-5 px-5 py-2 bg-teal-900 md:justify-start'
       >
         <img
-          src={require('../assets/images/group.png')}
+          src={require('../../assets/images/group.png')}
           alt=''
           className='w-16'
         ></img>

@@ -1,11 +1,9 @@
-import Layout from './Layout';
+import Layout from './Layout/Layout';
 import Home from '../pages/Home';
-import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom';
-import Person from './Person';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Person from '../pages/Person';
 
 function App() {
-  let { id } = useParams();
-
   return (
     <BrowserRouter>
       <Routes>
