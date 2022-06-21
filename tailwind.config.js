@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         'handwr': ['Dancing Script', 'sans-serif'],
+        'open': ['Open Sans', 'sans-serif'],
       },
     },
   },
