@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <div>
+    <div data-testid='navbar'>
       <div className='flex items-center justify-center px-5 py-2 bg-teal-900 md:justify-start'>
         <Link
           to='/'
