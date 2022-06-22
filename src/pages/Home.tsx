@@ -40,7 +40,10 @@ function Home() {
         onChange={(e) => searchPeople(e.target.value)}
         className='rounded-lg px-4 h-10 w-72 border-2 border-solid border-teal-900 bg-[#F5F5F5] focus:outline-none focus:bg-white md:w-[500px]'
       ></input>
-      <div className='flex flex-wrap w-2/3 justify-evenly gap-x-8 gap-y-10'>
+      <div
+        className='flex flex-wrap w-2/3 justify-evenly gap-x-8 gap-y-10'
+        data-testid='card-list'
+      >
         {query.length > 1
           ? filteredResults.map((person) => (
               <Card key={person.id} {...person} />
