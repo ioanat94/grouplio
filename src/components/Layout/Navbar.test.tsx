@@ -1,7 +1,8 @@
 import '@testing-library/jest-dom';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { MemoryRouter } from 'react-router-dom';
+import { MemoryRouter, Router } from 'react-router-dom';
+import { createMemoryHistory } from 'history';
 import Navbar from './Navbar';
 
 it('renders without crashing', () => {
@@ -31,14 +32,14 @@ it('renders website logo', () => {
 });
 
 it('navigates home when you click the logo/title', () => {
+  const history = createMemoryHistory();
+
   render(
-    <MemoryRouter>
+    <Router location={history.location} navigator={history}>
       <Navbar />
-    </MemoryRouter>
+    </Router>
   );
 
   userEvent.click(screen.getByTestId('link-home'));
-  waitFor(() => {
-    expect(screen.getByPlaceholderText('Search...')).toBeInTheDocument();
-  });
+  expect(history.location.pathname).toBe('/');
 });

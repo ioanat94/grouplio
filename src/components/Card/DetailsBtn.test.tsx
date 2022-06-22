@@ -1,8 +1,9 @@
 import '@testing-library/jest-dom';
-import { fireEvent, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 import DetailsBtn from './DetailsBtn';
+import userEvent from '@testing-library/user-event';
 
 it('renders without crashing', () => {
   render(
@@ -21,6 +22,6 @@ it('navigates to Person page when clicked', () => {
     </Router>
   );
 
-  fireEvent.click(screen.getByTestId('more-details'));
+  userEvent.click(screen.getByTestId('more-details'));
   expect(history.location.pathname).toBe('/people/1');
 });
