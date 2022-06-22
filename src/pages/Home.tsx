@@ -33,7 +33,10 @@ function Home() {
   }, []);
 
   return (
-    <div className='flex flex-col items-center gap-10 bg-[#F5F5F5] min-h-[calc(100vh-48px-80px)] py-10'>
+    <div
+      className='flex flex-col items-center gap-10 bg-[#F5F5F5] min-h-[calc(100vh-48px-80px)] py-10'
+      data-testid='home-page'
+    >
       <input
         type='search'
         placeholder='Search...'
