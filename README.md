@@ -41,9 +41,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-<p float="left">
-  <img src="https://i.ibb.co/pjhpTT9/screely-desktop.png" alt="Desktop Screenshot" width="700" height="auto" hspace="20">
-  <img src="https://i.ibb.co/f84V2Zg/screely-mobile.png" alt="Mobile Screenshot" width="auto" height="489">
+<p float="left" align="center">
+  <img src="https://i.ibb.co/pjhpTT9/screely-desktop.png" alt="Desktop Screenshot" width="600" height="auto" hspace="5">
+  <img src="https://i.ibb.co/f84V2Zg/screely-mobile.png" alt="Mobile Screenshot" width="auto" height="419">
 </p>
 
 Grouplio is a small app that displays the members of your group or team as a list of short info cards. This was a pre-assignment for Integrify's Full Stack Academy.
