@@ -46,35 +46,3 @@ it('renders correct data', () => {
 
   expect(screen.getByText('Leanne Graham')).toBeInTheDocument();
 });
-
-it('has correct background color on hover', () => {
-  render(
-    <MemoryRouter>
-      <Card {...testData} />
-    </MemoryRouter>
-  );
-
-  userEvent.hover(screen.getByTestId('card'));
-
-  waitFor(() => {
-    expect(screen.getByTestId('card')).toHaveStyle(
-      'background-color: white; box-shadow: 0 0 #0000'
-    );
-  });
-});
-
-it('has correct link color on hover', () => {
-  render(
-    <MemoryRouter>
-      <Card {...testData} />
-    </MemoryRouter>
-  );
-
-  userEvent.hover(screen.getByText('hildegard.org'));
-
-  waitFor(() => {
-    expect(screen.getByText('hildegard.org')).toHaveStyle(
-      'color: #707070; border-bottom-color: #F5F5F5'
-    );
-  });
-});
